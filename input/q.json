@@ -1,0 +1,16 @@
+{
+  "payload": {
+    "meta": {
+      "createdTime": "1530783653303",
+      "queryCounter": "3",
+      "creatorAccountId": "admin@uni"
+    },
+    "getAccountAssets": {
+      "accountId": "admin@uni"
+    }
+  },
+  "signature": {
+    "pubkey": "iJ9riB4zG+IUh9t33PMsX409XoBm540v6sQjn+kdQW8=",
+    "signature": "vySMEcHPuCWXbxeV/21hcNRy41MLCnPPYisM/XDCyoxcAqfbT5cE6V66mg4MBeajxR2E38DA+s+gW/i4gJk1Bw=="
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "createdTime": "1530800789402", 
+  "transactions": [
+    {
+      "signatures": [
+        {
+          "pubkey": "iJ9riB4zG+IUh9t33PMsX409XoBm540v6sQjn+kdQW8=", 
+          "signature": "iHH2dy9SXGV5acKUpP12nZEgLDI9+mWFKpStbdnod5qzuIcRu3tFKizIromWtRjUtvYK/3BhUcBldl3j45ztDw=="
+        }
+      ], 
+      "payload": {
+        "createdTime": "1530800788068", 
+        "commands": [
+          {
+            "addAssetQuantity": {
+              "assetId": "memes#uni", 
+              "amount": {
+                "precision": 1, 
+                "value": {
+                  "fourth": "333"
+                }
+              }, 
+              "accountId": "admin@uni"
+            }
+          }
+        ], 
+        "quorum": 1, 
+        "creatorAccountId": "admin@uni"
+      }
+    }
+  ], 
+  "height": "1"
+}

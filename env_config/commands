@@ -1,0 +1,97 @@
+psql1
+
+docker run --name some-postgres1 \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=oneirohatwoiroha \
+--network=iroha-network1 \
+-d postgres:9.5
+
+
+psql2
+
+docker run --name some-postgres2 \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=oneirohatwoiroha \
+--network=iroha-network2 \
+-d postgres:9.5
+
+
+psql3
+
+docker run --name some-postgres3 \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=oneirohatwoiroha \
+--network=iroha-network3 \
+-d postgres:9.5
+
+
+psql4
+
+docker run --name some-postgres4 \
+-e POSTGRES_USER=postgres \
+-e POSTGRES_PASSWORD=oneirohatwoiroha \
+--network=iroha-network4 \
+-d postgres:9.5
+
+
+node1
+
+docker run -it --name iroha1 \
+-p 50051:50051 \
+-p 10001:10001 \
+--network=iroha-network1 \
+-v /home/unisokay/iroha:/opt/iroha_data \
+-v blockstore1:/tmp/block_store \
+--entrypoint=/bin/bash \
+hyperledger/iroha:develop
+
+irohad --config config1 \
+--genesis_block genesis.block \
+--keypair_name node1
+
+node2
+
+docker run -it --name iroha2 \
+-p 50052:50052 \
+-p 10002:10002 \
+--network=iroha-network2 \
+-v /home/unisokay/iroha:/opt/iroha_data \
+-v blockstore2:/tmp/block_store \
+--entrypoint=/bin/bash \
+hyperledger/iroha:develop
+
+irohad --config config2 \
+--genesis_block genesis.block \
+--keypair_name node2
+
+
+node3
+
+docker run -it --name iroha3 \
+-p 50053:50053 \
+-p 10003:10003 \
+--network=iroha-network3 \
+-v /home/unisokay/iroha:/opt/iroha_data \
+-v blockstore3:/tmp/block_store \
+--entrypoint=/bin/bash \
+hyperledger/iroha:develop
+
+irohad --config config3 \
+--genesis_block genesis.block \
+--keypair_name node3
+
+
+node4
+
+docker run -it --name iroha4 \
+-p 50054:50054 \
+-p 10004:10004 \
+--network=iroha-network4 \
+-v /home/unisokay/iroha:/opt/iroha_data \
+-v blockstore:/tmp/block_store \
+--entrypoint=/bin/bash \
+hyperledger/iroha:develop
+
+irohad --config config4 \
+--genesis_block genesis.block \
+--keypair_name node4

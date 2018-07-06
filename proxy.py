@@ -122,11 +122,11 @@ class YacGate(yac_pb2_grpc.YacServicer):
     log('Commit', MessageToJson(request))
     return sendCommit(YAC_SEND_TO_ADDRESS, request)
 
-    #sendReject intead of commit is not a problem
-
     #sendVote(PEERS_REAL_ADDRESS, request) # results in segmentation fault
     #[2018-07-05 13:58:08.602811208][th:88][error] YacPbConverter::deserializeVote Cannot build vote hash block signature: Signature Builder: [[Public key has wrong size, passed size: 0. Expected size: 32 ]]
     #[2018-07-05 13:58:08.604775737][th:88][error] YacPbConverter::deserializeVote Cannot build vote signature: Signature Builder: [[Public key has wrong size, passed size: 0. Expected size: 32 ]]
+
+    #sendReject instead of commit is not a problem
 
   def SendReject(self, request, context):
     log('Reject', MessageToJson(request))

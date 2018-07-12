@@ -27,7 +27,7 @@ cc="docker run -it --name iroha$i \
   --network=iroha-network$i \
   -v $cfg_dir:/opt/iroha_data \
   -v blockstore$i:/tmp/block_store \
-  --entrypoint=/usr/bin/irohad hyperledger/iroha:develop --config config$i --genesis_block genesis.block --keypair_name node$i --overwrite-ledger";
+  --entrypoint=/usr/bin/irohad hyperledger/iroha:latest --config config$i --genesis_block genesis.block --keypair_name node$i";
 str="$str --tab -e \"$cc\"";
 done
 

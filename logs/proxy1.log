@@ -3813,3 +3813,112 @@ Vote [ 07:19:52 ]
     "signature": "SJ8f9aBZKvRHzhqOdrj7Qz+URUx1gHi55vlbe68XJMY8LUFiK4+MG9O13C22L15NCwVTABAL+sy6ZQ7JMUTnAQ=="
   }
 }
+Relayed transaction [ 12:08:07 ]
+{
+  "signatures": [
+    {
+      "pubkey": "iJ9riB4zG+IUh9t33PMsX409XoBm540v6sQjn+kdQW8=", 
+      "signature": "0OoV8tU0GYbJSdZBkximNm4s3C/4Wyif3/tPzCaI9JJbSktTIGGdM2r0jLYzNC6mz0aJjvv5SmdIhPYKYM82BA=="
+    }
+  ], 
+  "payload": {
+    "createdTime": "1531397287951", 
+    "commands": [
+      {
+        "addAssetQuantity": {
+          "assetId": "memes#uni", 
+          "amount": {
+            "precision": 1, 
+            "value": {
+              "fourth": "300"
+            }
+          }, 
+          "accountId": "admin@uni"
+        }
+      }
+    ], 
+    "quorum": 1, 
+    "creatorAccountId": "admin@uni"
+  }
+}
+Proposal [ 12:08:08 ]
+{
+  "createdTime": "1531397288611", 
+  "transactions": [
+    {
+      "signatures": [
+        {
+          "pubkey": "iJ9riB4zG+IUh9t33PMsX409XoBm540v6sQjn+kdQW8=", 
+          "signature": "0OoV8tU0GYbJSdZBkximNm4s3C/4Wyif3/tPzCaI9JJbSktTIGGdM2r0jLYzNC6mz0aJjvv5SmdIhPYKYM82BA=="
+        }
+      ], 
+      "payload": {
+        "createdTime": "1531397287951", 
+        "commands": [
+          {
+            "addAssetQuantity": {
+              "assetId": "memes#uni", 
+              "amount": {
+                "precision": 1, 
+                "value": {
+                  "fourth": "300"
+                }
+              }, 
+              "accountId": "admin@uni"
+            }
+          }
+        ], 
+        "quorum": 1, 
+        "creatorAccountId": "admin@uni"
+      }
+    }
+  ], 
+  "height": "2"
+}
+Commit [ 12:08:08 ]
+{
+  "votes": [
+    {
+      "hash": {
+        "proposal": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ==", 
+        "blockSignature": {
+          "pubkey": "Tdknq2QtXCGXQb495x2DiB8xFttlhdAn1X9LcLKmTYk=", 
+          "signature": "jS7H1H4Jl8nEpAo7jry/iMzvd/CrYmJInVHo+w4AKU3Dbd+T28I2Sj7xjP3hrxX7JBnto1wykypclsiBpTtIDg=="
+        }, 
+        "block": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ=="
+      }, 
+      "signature": {
+        "pubkey": "Tdknq2QtXCGXQb495x2DiB8xFttlhdAn1X9LcLKmTYk=", 
+        "signature": "9QuSL2plHoecWwntCzWw9Gh3fjQ6BAWJoO5ElU1ZyXqWSUr6HvOT8Tru+92+Jv1+xYHXf8XTVKoCTrOwRsa8BQ=="
+      }
+    }, 
+    {
+      "hash": {
+        "proposal": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ==", 
+        "blockSignature": {
+          "pubkey": "mBLYoYKLQEpZNpjdL53izciMA/ioIiw3mWxHbTDNYuc=", 
+          "signature": "uYbC5Fc5hO+wECBEC9omgbVCmBEtMPNN7tytYaHWn1QRZdYRzkEbRFzRhjIAb7AdkKNGt4Dd2q/j6kzxSGCmBQ=="
+        }, 
+        "block": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ=="
+      }, 
+      "signature": {
+        "pubkey": "mBLYoYKLQEpZNpjdL53izciMA/ioIiw3mWxHbTDNYuc=", 
+        "signature": "QTZkW4CnSdG+FdrtS6oevfKUXNcx8htrJPGrHZzLbssgN2RCQo9uPnr9W8h8bRv1CkIzD+9o99+gdbbhx1kpCg=="
+      }
+    }, 
+    {
+      "hash": {
+        "proposal": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ==", 
+        "blockSignature": {
+          "pubkey": "0E2icbV/5jQmrh3Jf2lSEEA3QR/PTztzncIX9F5fyZs=", 
+          "signature": "pVJ/mbkxAV2vZGFhqZj97VEhKBTOUmtQa+Ow2k/9BBmNKm3jpfA0KHmErdIKt/cfSjRIgcBop9KDaY7PkhSmAA=="
+        }, 
+        "block": "ODVlMmU0M2JkOGNkYjA3MWVhNjlhYWUwYTNmNDZmYzExZjc1ZmViZTMwMmE3MTczZWZiNTA5Zjk0MjNkMTAyMQ=="
+      }, 
+      "signature": {
+        "pubkey": "0E2icbV/5jQmrh3Jf2lSEEA3QR/PTztzncIX9F5fyZs=", 
+        "signature": "q+FBgDzsa7JsAtWF9Iks1nsh78AtGJcpWY04r52lSwE7i7kPzbC2zbeKPGQH1zUqbvF1XS8Ns0H59/CzIBMwAQ=="
+      }
+    }
+  ]
+}

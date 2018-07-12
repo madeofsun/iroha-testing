@@ -2,6 +2,13 @@ cfg_dir=`pwd ./`
 i=
 for i in {1..4}
 do
+  docker stop iroha$i >> /dev/null;
+  docker rm iroha$i >> /dev/null;
+  docker stop some-postgres$i >> /dev/null;
+  docker rm some-postgres$i >> /dev/null;
+  docker volume rm blockstore$i >> /dev/null;
+  docker network rm iroha-network$i >> /dev/null;
+
   docker network create iroha-network$i;
   docker run --name some-postgres$i \
   -e POSTGRES_USER=postgres \
@@ -24,4 +31,4 @@ cc="docker run -it --name iroha$i \
 str="$str --tab -e \"$cc\"";
 done
 
-/bin/bash -c "$str"
+/bin/bash -c "$str >> /dev/null"
